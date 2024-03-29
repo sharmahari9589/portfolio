@@ -1,0 +1,128 @@
+
+.mainDiv {
+    display: flex;
+    flex-direction: row;
+align-items: center;
+scroll-behavior:smooth;
+height: 100%;
+}
+
+
+
+.mainDiv > div > img {
+    margin-top: 100px;
+    border-radius: 50%;
+    width: 100%;
+    animation: slideFromRight 1s ease-in-out;
+    /* Adjust the animation duration and easing as needed */
+}
+
+@keyframes slideFromRight { 
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+.contentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-family: Inter, sans-serif;
+    opacity: 0; /* Initially hide the content */
+    animation: fadeInFromRight 1s ease-in-out forwards; /* Apply animation */
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+.contentDiv > h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    clear: both;
+    color: #fdfeff;
+    padding: 0;
+    margin: 0 0 10px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.contentDiv > p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6em;
+    margin-bottom: 22px;
+    color: #a9adb8;
+
+}
+
+.svg{
+    display: flex;
+   align-items: center;
+}
+
+.svg > p {
+    color:#a9adb8 ;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 390px) and (max-width: 1250px) {
+.mainDiv {
+    flex-direction: column;
+}    
+
+.contentDiv{
+    width: 70%;
+}
+ 
+.contentDiv >h1 {
+    font-size: 32px;
+}
+
+
+
+}
+
+@media(max-width: 390px) {
+    
+    .contentDiv  {
+   width: 90%;
+    }
+
+    .contentDiv > h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .contentDiv > h1 >span {
+        display: block; /* or display: inline-block; */
+    }
+}

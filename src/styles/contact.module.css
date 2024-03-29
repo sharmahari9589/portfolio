@@ -1,0 +1,228 @@
+.mainDiv {
+    background-color: #020a14f3;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+
+.title > h1 {
+    text-transform: uppercase;
+    /* transform: translate(-50%); */
+    font-size: 90px;
+    font-weight: 700;
+    color:#32384680 ;
+    padding-top: 110px;
+    margin: -17px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif
+}
+
+.upperTitile {
+    text-align: center;
+    height: 20px;
+}
+
+.upperTitile > h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fec544;
+    position: relative;
+    z-index: 10;
+    margin-top: -50px;
+    letter-spacing: 1px;
+    font-family: Inter, sans-serif
+}
+
+
+
+.upperTitile > hr {
+    width: 180px;
+}
+
+
+.ContactDiv {
+    display: flex;
+margin-top: 80px;
+gap: 5%;
+padding-bottom: 100px;
+}
+
+.subDiv1 {
+    margin-left: 110px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.subDiv2{
+    margin-right: 110px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.subDiv1 >h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.subDiv1 > input {
+    display: block;
+    width: 100%;
+    color: #a9adb8;
+    padding: 12px 20px;
+    border: 1px solid #232935;
+    background-color: #101624;
+    height: 25px;
+    border-radius: 7px;
+    transition: all .4s ease;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin-bottom: 30px;
+
+}
+
+.subDiv1 > textarea {
+    display: block;
+    width: 100%;
+    color: #a9adb8;
+    padding: 12px 20px;
+    border: 1px solid #232935;
+    background-color: #101624;
+    height: 152px;
+    border-radius: 7px;
+    transition: all .4s ease;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    resize: vertical;
+    margin-bottom: 30px;
+}
+
+.subDiv1 > button {
+    background-color: #fec544;
+    color: #070d1b;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5em;
+    font-weight: 500;
+    padding: 12px 1.5em;
+    border-radius: 50px;
+    min-width: 170px;
+    border: none;
+    outline: none;
+    transition: all .4s ease;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.subDiv2 >h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 30px;
+
+}
+
+.myDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.myDiv > p {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a9adb8;
+    border-radius: 100%;
+
+
+}
+
+.myDiv > p svg {
+    padding: 18px;
+}
+
+.svg {
+    display: flex;
+}
+
+.svg > p {
+    font-size: 20px;
+    margin-right: 30px;
+    border: 1px solid #a9adb8;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    
+}
+
+.svg > p:hover  {
+   background-color: #a9adb8;
+   color: #070d1b;
+    transition: all 1s;
+    
+}
+
+
+@media (min-width: 390px) and (max-width: 1250px) {
+  .ContactDiv {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subDiv1{
+    margin: 0;
+    width: 80%;
+  }
+
+  .subDiv2 {
+    margin: 0;
+    width: 80%;
+  }
+    
+    
+     }
+     
+     @media(max-width: 390px) {
+        .ContactDiv {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: -40px;
+          }
+
+        .title{
+            padding-top: 80px;
+        }
+
+        .title > h1 {
+            display: none;
+        }
+
+        .subDiv1{
+            margin: 0;
+            width: 65%;
+          }
+        
+          .subDiv2 {
+            margin: 0;
+            width: 65%;
+          }
+
+    
+
+     }

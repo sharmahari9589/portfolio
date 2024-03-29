@@ -1,0 +1,173 @@
+.mainDiv {
+    background-color: #01050af3;
+    height: 100%;
+    width: 100%;
+
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+
+.title>h1 {
+    text-transform: uppercase;
+    /* transform: translate(-50%); */
+    font-size: 90px;
+    font-weight: 700;
+    color: #32384680;
+    padding-top: 110px;
+    margin: -17px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif
+}
+
+.upperTitile {
+    text-align: center;
+    height: 20px;
+}
+
+.upperTitile>h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fec544;
+    position: relative;
+    z-index: 10;
+    margin-top: -50px;
+    letter-spacing: 1px;
+    font-family: Inter, sans-serif
+}
+
+
+
+.upperTitile>hr {
+    width: 180px;
+}
+
+
+.parentDiv {
+    margin: 80px 100px 0 100px;
+    box-sizing: border-box;
+    padding-bottom: 100px;
+}
+
+.subDiv {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.subDiv>div {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.subDiv>div:hover .myDiv {
+   display: block !important;
+
+}
+
+.subDiv>div:hover {
+    background-color: #171f31b2;
+    opacity: 0.6;
+    transition: all .4s ease;
+}
+ 
+
+.subDiv>div:hover p > svg {
+    display: block !important;
+}
+
+.subDiv>div:hover h1 {
+    display: block !important;
+}
+.myDiv  {
+    display: none;
+    width: 90%;
+    height: 90%;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.myDiv > p > svg {
+    display: none;
+    font-size: 80px;
+    color: #fec544;
+   position: relative;
+left: 37%;
+top: 80px;
+}
+
+.myDiv > h1 {
+    display: none;
+    color: azure;
+    position: relative;
+    left: 37%;
+top: 80px;
+}
+
+
+@media (min-width: 390px) and (max-width: 1250px) {
+  
+    .mainDiv {
+        height: 210vh;
+    }
+   
+    .subDiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+   
+    
+     }
+     
+     @media(max-width: 390px) {
+        .title{
+            padding-top: 80px;
+        }
+
+.title > h1 {
+    display: none;
+}
+
+        .mainDiv{
+            height: 255vh;
+        }
+
+ .parentDiv{
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+    width: 85%;
+ }
+
+        .subDiv {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           margin-bottom: 20px;
+           
+        }
+
+        .subDiv>div{
+            margin: 0;
+            padding: 0;
+        }
+    
+     }
